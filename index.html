@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="../fonts/fonts.css" />
-    <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header class="header">
@@ -18,7 +18,7 @@
           <li class="header__links-list-item"><a href="#about">Об аукционе</a></li>
         </ul>
         <a class="header__logo">
-            <img class="header__logo-image" src="../images/logo-black.svg" alt="Логотип 'Оно тебе надо'" />
+            <img class="header__logo-image" src="./images/logo-black.svg" alt="Логотип 'Оно тебе надо'" />
         </a>
         <address class="adress">
           <a class="header__phone" href="tel:+99995555555">+9 999 555 5555</a><br />
@@ -28,16 +28,64 @@
         </address>
       </div>
     </header>
-    <section class="cover">
+    <main class="cover" id="main">
       <div class="overlay"></div>
-      <h1 class="cover__title"><span class="span-cover-title-first-line">О<span class="span-ls-06em">но</span></span><br /><span class="span-cover-title-second-line">те<span class="span-ls-06em">бе</span></span><br /><span class="span-cover-title-third-line"><span class="span-ls-06em">н</span>адо</span></h1>
+      <h1 class="cover__title"><span class="aligned-text">О<span class="span-ls-06em">но</span></span><br /><span class="aligned-text-center">те<span class="span-ls-06em">бе</span></span><br /><span class="aligned-text-right"><span class="span-ls-06em">н</span>адо</span></h1>
       <div class="cover__description">
         <div class="cover__description-text">Аукцион вещей, <span class="span-ws-08em">в которые никто не </span>верил</div>
-        <a class="bet_button" href="#lots">Сделать ставку</a>
+        <a class="bet-button" href="#lots">Сделать ставку</a>
+      </div>
+    </main>
+    <section class="lots">
+      <h1 class="lots__heading" id="lots">Лоты</h1>
+      <ul class="lots__card-list">
+        <li class="lots__card-list-item">
+          <a class="card-link" href="">
+          <article class="card card_type_film">
+            <div>
+              <div class="overlay"></div>
+              <h2 class="card__title">Фильм режиссёра, который бросил киношколу</h2>
+              <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+            </div>
+          </article>
+          </a>
+        </li>
+        <li class="lots__card-list-item">
+          <a class="card-link" href="">
+          <article class="card card_type_book">
+            <div>
+              <div class="overlay"></div>
+              <h2 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h2>
+              <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+          </article>
+          </a>
+        </li>
+        <li class="lots__card-list-item">
+          <a class="card-link" href="">
+          <article class="card card_type_picture">
+            <div>
+              <div class="overlay"></div>
+              <h2 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h2>
+              <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков<span class="span-ls-013em">...</span> Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+            </div>
+          </article>
+          </a>
+        </li>
+      </ul>
+      <a class="lots__look-more-link" href="#lots">Посмотреть больше</a>
+    </section>
+    <section class="about">
+      <div class="about__column">
+        <div class="about__logo">
+          <img class="about__logo-image" src="./images/logo-white.svg" alt="Логотип 'Оно тебе надо'" />
+        </div>
+      </div>
+      <div class="about__column">
+        <h2 class="about__title">Об аукционе</h2>
+        <p class="about__text">Здесь вы не встретите очередное <span class="span-ls-0em">пафосное собрание невероятно дорогого антиквариата.</span> <span class="span-ls-002em">Наши</span> лоты вообще не должны <span class="span-ls-minus-001em">были попасть</span> ни на один аукцион.<span class="span-ls-0em"> Потому что кому нужен </span><span class="span-ls-003em">дневник</span><span class="span-ls-0em"> девочки-подростка или картина, которую может</span> нарисовать даже ребёнок? <span class="span-ls-0em">Кому нужны все эти </span>странные вещи, созданные любителями?</p>
+        <p class="about__text">Слишком сложные<span class="span-ls-minus-001em"> или, наоборот, слишком</span> простые. Опережающие своё время. <span class="span-ls-0em">В пух и прах растерзанные критиками. Непринятые и непонятые. </span>Когда-то они казались <span class="span-ls-0em">просто неудачными.</span> Но, несмотря на критику, <span class="span-ls-minus-001em">кажущуюся простоту</span> или сложность, <span class="span-ls-minus-001em">сейчас без этих лотов невозможно</span> представить современную культуру. Когда в эти вещи не верил никто, <span class="span-ls-minus-001em">продолжали верить</span> их создатели. И сейчас эти лоты стали <span class="span-ls-0em">культовыми.</span></p>
       </div>
     </section>
-    <section class="lots"></section>
-    <section class="about"></section>
     <footer class="footer"></footer>
   </body>
 </html>
