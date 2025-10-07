@@ -254,9 +254,12 @@ address {
 }
 
 .about__text {
-    line-height: 1.19em;
+    line-height: 1.20em;
     letter-spacing: 0.01em;
     font-size: 20px;
+}
+
+.about__text.first {
     padding-bottom: 25px;
 }
 
@@ -274,4 +277,70 @@ address {
 
 .span-ls-minus-001em {
     letter-spacing: -0.01em
+}
+
+.footer {
+    width: 1000px;
+    height: 98px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+}
+
+.footer__adress {
+    height: 98px;
+    font-size: 18px;
+    text-underline-offset: 3px;
+    padding:  0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0.66em;
+}
+
+.footer__menu {
+    height: 98px;
+    font-size: 18px;
+    text-transform: lowercase;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__menu-link {
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
+.footer__menu-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__social {
+    height: 98px;
+}
+
+.footer__social-list {
+    height: 48px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footer__social-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    float: right;
+    margin-left: 48px;
 }
